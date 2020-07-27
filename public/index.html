@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Task</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group has-danger">
+                    <input type="text" id="searched_inp" class="form-control" placeholder="Search">
+                </div>
+            </div>
+            <div class="col-2">
+                <button class="btn btn-outline-primary" id="start_search">
+                    <i class="fa fa-search" aria-hidden="true"></i> Search
+                </button>
+            </div>
+            <div class="col-2">
+                <div style="display: none;" class="spinner-border" id="loadingSpiner"role="status">
+                  </div>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="usersContainer">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
