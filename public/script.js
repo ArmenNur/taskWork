@@ -28,9 +28,9 @@ function createRow(user) {
     elem_td3.innerText = email;
     elem_td4.innerHTML = `<image src=${avatar} style="width: 30px"/>`;
     elem_th.appendChild(elem_td4);
+    elem_th.appendChild(elem_td1);
     elem_th.appendChild(elem_td2);
     elem_th.appendChild(elem_td3);
-    elem_th.appendChild(elem_td1);
     urlsContainer.appendChild(elem_th);
 }
 getUsers()
